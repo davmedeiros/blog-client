@@ -11,6 +11,7 @@ const Login = () => {
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      // TODO: Check why the body data isn't sent.
       console.log(JSON.stringify(body));
       let res = await fetch('http://localhost:3000/login', {
         method: 'POST',
